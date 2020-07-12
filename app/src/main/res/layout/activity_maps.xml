@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_gold"
+        android:layout_margin="20dp"
+        >
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_backspace_black_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candi Singosari"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer_up_detail"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/button_gold"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/3 Objek"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/numOfObject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23j 55m tersedia"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_detail"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="26dp"
+        android:layout_above="@id/footer_detail"
+        android:layout_alignParentEnd="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_photo_camera_black_24dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer_detail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/footer_blue"
+        android:layout_alignParentBottom="true"
+        >
+
+
+
+        <LinearLayout
+            android:id="@+id/object"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp">
+                <TextView
+                    android:id="@+id/point_maps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 Point"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:drawableLeft="@drawable/poin_icon_small"
+                    android:gravity="center"
+                    android:textSize="14sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/icon_image"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/point_maps"
+                    android:background="@drawable/icon_detail_big">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/arca"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon_image"
+                    android:text="Arca"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp">
+                <TextView
+                    android:id="@+id/point_maps2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 Point"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:drawableLeft="@drawable/poin_icon_small"
+                    android:gravity="center"
+                    android:textSize="14sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/icon_image2"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/point_maps2"
+                    android:background="@drawable/icon_detail_big">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/keris"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon_image2"
+                    android:text="Keris"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/point_maps3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 Point"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:drawableLeft="@drawable/poin_icon_small"
+                    android:gravity="center"
+                    android:textSize="14sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/icon_image3"
+                    android:layout_below="@id/point_maps3"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/icon_detail_big">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/patung"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon_image3"
+                    android:text="Patung"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_daftar_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="Daftar"
+        android:textColor="#EFD07B"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/tv_namaLengkap_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_daftar_register"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="14sp"
+        android:text="Nama Lengkap"
+        android:textColor="#EFD07B"
+        android:fontFamily="@font/montserrat"/>
+
+    <EditText
+        android:id="@+id/edt_namaLengkap_register"
+        android:inputType="textCapWords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_namaLengkap_register"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="#FFC854"
+        android:fontFamily="@font/montserrat"
+        android:backgroundTint="#EFD07B"/>
+
+    <TextView
+        android:id="@+id/tv_username_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_namaLengkap_register"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="14sp"
+        android:text="Username"
+        android:textColor="#EFD07B"
+        android:fontFamily="@font/montserrat"/>
+
+    <EditText
+        android:id="@+id/edt_username_register"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_username_register"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="#EFD07B"
+        android:textColor="#FFC854"
+        android:fontFamily="@font/montserrat"/>
+
+    <TextView
+        android:id="@+id/tv_email_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_username_register"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="14sp"
+        android:text="E-mail"
+        android:textColor="#EFD07B"
+        android:fontFamily="@font/montserrat"/>
+
+    <EditText
+        android:id="@+id/edt_email_register"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_email_register"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="#EFD07B"
+        android:textColor="#FFC854"
+        android:fontFamily="@font/montserrat"/>
+
+    <TextView
+        android:id="@+id/tv_noTelp_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_email_register"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="14sp"
+        android:text="No. Telpon"
+        android:textColor="#EFD07B"
+        android:fontFamily="@font/montserrat"/>
+
+    <EditText
+        android:id="@+id/edt_noTelp_register"
+        android:inputType="textPhonetic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_noTelp_register"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="#EFD07B"
+        android:textColor="#FFC854"
+        android:fontFamily="@font/montserrat"/>
+
+    <TextView
+        android:id="@+id/tv_password_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_noTelp_register"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="14sp"
+        android:text="Password"
+        android:textColor="#EFD07B"
+        android:fontFamily="@font/montserrat"/>
+
+    <EditText
+        android:id="@+id/edt_password_register"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_password_register"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="#EFD07B"
+        android:textColor="#FFC854"
+        android:fontFamily="@font/montserrat"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/edt_password_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Daftar"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/montserrat"
+        android:background="@drawable/button_blue"
+        android:textAllCaps="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/btn_register">
+        <TextView
+            android:id="@+id/tv_sudahPunyaAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="top"
+            android:text="Sudah punya akun ?  "
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_masuk_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="top"
+            android:text="Masuk"
+            android:textColor="#EFD07B"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

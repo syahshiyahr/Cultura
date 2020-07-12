@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_redeem"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="15dp"
+    app:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="10dp"
+
+    >
+
+    <RelativeLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:text="Kaos Cultura Exclusive"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/Expires"
+            android:layout_below="@+id/tv_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:text="Kadaluarsa"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/tvExpires"
+            android:layout_below="@+id/Expires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            tools:text="Tidak ada"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/term"
+            android:layout_below="@+id/tvExpires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="8sp"
+            android:text="Syarat dan ketentuan berlaku"
+            android:textColor="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/poin_redeem"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_gold"
+            android:text="800"
+            android:drawableLeft="@drawable/poin_icon_small"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

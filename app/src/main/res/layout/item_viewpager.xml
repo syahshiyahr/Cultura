@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="30dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pager_background"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="24dp"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp"
+            android:baselineAligned="false"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                >
+                <ImageView
+                    android:id="@+id/img_item_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="@drawable/candi_singosari"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/name_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Candi Singosari"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/desc_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Borobudur adalah sebuah candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia. Candi ini .... "
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/montserrat"
+                android:textSize="10sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/selengkapnya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selengkapnya >"
+                android:gravity="end"
+                android:fontFamily="@font/montserrat"
+                android:textSize="10sp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="7dp"/>
+
+            <TextView
+                android:id="@+id/jarak_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4 KM"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:drawablePadding="5dp"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/montserrat"
+                android:textSize="10sp"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:id="@+id/objek_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5 Objects"
+                android:drawableLeft="@drawable/ic_my_location_black_24dp"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/montserrat"
+                android:textSize="10sp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/takeChallenge"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_blue"
+                android:text="Terima Tantangan"
+                android:textAllCaps="false"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:textSize="10sp"
+                android:textColor="@android:color/white"/>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

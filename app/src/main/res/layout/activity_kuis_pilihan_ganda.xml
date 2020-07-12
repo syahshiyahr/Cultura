@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KuisPilihanGandaActivity"
+    android:background="@drawable/mychallenge_background">
+
+    <RelativeLayout
+        android:id="@+id/appBar_myChallenge"
+        android:layout_width="match_parent"
+
+        android:layout_height="64dp">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_backspace_black_24dp"/>
+
+        <TextView
+            android:id="@+id/tvSkor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="100"
+            android:drawableLeft="@drawable/poin_icon_small"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/montserrat"
+            android:drawablePadding="5dp"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_ayo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ayo selesaikan tantangan ini dan dapatkan tambahan poin!"
+        android:layout_below="@id/appBar_myChallenge"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@android:color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_ayo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        app:cardCornerRadius="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/popupdetail_background">
+        <TextView
+            android:id="@+id/tvSoal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="ini soal"
+            android:layout_above="@+id/lineJawaban"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/montserrat"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/lineJawaban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <RadioGroup
+                android:id="@+id/rgPilihanJawaban"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/button_gold"
+                    android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbPilihanJawaban1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/button_gold"
+                    android:layout_marginBottom="20dp">
+
+                    <RadioButton
+                        android:id="@+id/rbPilihanJawaban2"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/button_gold"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbPilihanJawaban3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+            </RadioGroup>
+
+
+        </LinearLayout>
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="158dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/lineJawaban"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Submit"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/montserrat"
+                android:background="@drawable/button_gold"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

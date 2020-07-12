@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryObjectActivity"
+    android:background="@drawable/history_obeject_background">
+
+    <RelativeLayout
+        android:id="@+id/appBar_myChallenge"
+        android:layout_width="match_parent"
+
+        android:layout_height="64dp">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_backspace_black_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candi Prambanan"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_centerInParent="true"/>
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+
+        android:gravity="center">
+    <LinearLayout
+        android:id="@+id/object_top"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp">
+
+            <RelativeLayout
+                android:id="@+id/icon_image"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:background="@drawable/icon_detail">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/arca_ganesha"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon_image"
+                android:text="Arca Ganesha"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/icon_image2"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:background="@drawable/icon_detail">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/arca_rorojonggrang"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon_image2"
+                android:text="Arca Roro\nJonggrang"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/object_bottom"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/object_top">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp">
+
+            <RelativeLayout
+                android:id="@+id/icon_image3"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:background="@drawable/icon_detail">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/arca_siwaprambanan"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon_image3"
+                android:text="Arca Siwa"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/icon_image4"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:background="@drawable/icon_detail">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/arca_garuda"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon_image4"
+                android:text="Candi Garuda"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

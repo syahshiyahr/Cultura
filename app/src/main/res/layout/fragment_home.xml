@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/tvSkor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="240"
+        android:drawableLeft="@drawable/poin_icon_small"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/montserrat"
+        android:drawablePadding="5dp"
+        android:textSize="12sp"/>
+
+
+    <SearchView
+        android:id="@+id/search_box_home"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/search_box"
+        android:queryHint="Cari Lokasi"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/transparent"
+        android:layout_marginTop="75dp"
+        android:theme="@style/appSearchView"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lokasi Sekitar"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginTop="60sp"
+        android:layout_below="@+id/search_box_home"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="18sp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_box_home"
+        android:layout_gravity="bottom"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:layout_marginTop="105dp"
+        android:paddingEnd="43dp"
+        android:paddingStart="43dp"
+        android:paddingBottom="40dp"/>
+
+
+</RelativeLayout>

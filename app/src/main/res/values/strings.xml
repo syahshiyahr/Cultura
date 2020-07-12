@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Cultura</string>
+    <string name="desc_place">Candi Singasari merupakan candi Hindu - Buddha peninggalan bersejarah dari Kerajaan Singasari berlokasi di Desa Candirenggo, Kecamatan Singosari, Kabupaten Malang, Jawa Timur, Indonesia, sekitar 10 km dari Kota Malang. Candi ini berada pada lembah di antara Pegunungan Tengger dan Gunung Arjuna pada ketinggian 512m di atas permukaan laut.
+
+\n\nCara pembuatan Candi Singasari ini menggunakan sistem menumpuk batu andesit hingga ketinggian tertentu selanjutnya diteruskan dengan mengukir dari atas baru turun ke bawah.
+    \n\nCandi Singasari ditemukan oleh Nicolaus Engelhard pada tahum 1803. Uniknya candi ini sempat menarik perhatian Th. Stamford Raffles yang mengunjunginya pada tahun 1855. Saat itu disebutkan bahwa candi tersebut berada di tengah hutan jati yang baru dibabat pada tahun 1820.[1]
+    \n\nKomplek percandian menempati areal 200 m × 400 m dan terdiri dari beberapa candi. Candi yang juga dikenal dengan nama Candi Cungkup atau Candi Menara ini, menunjukkan bahwa Candi Singasari adalah candi yang tertinggi pada masanya, setidaknya dibandingkan dengan candi lain di sekelilingnya. Namun saat ini di kawasan Singasari hanya Candi Singasari yang masih tersisa, sedangkan candi lainnya telah lenyap tak berbekas.
+
+\n\nBangunan Candi Singasari terletak di tengah halaman. Tubuh candi berdiri di atas batur kaki setinggi sekitar 1,5 m, tanpa hiasan atau relief pada kaki candi. Tangga naik ke selasar di kaki candi tidak diapit oleh pipi tangga dengan hiasan makara seperti yang terdapat pada candi-candi lain. Pintu masuk ke ruangan di tengah tubuh candi menghadap ke selatan, terletak pada sisi depan bilik penampil (bilik kecil yang menjorok ke depan). Pintu masuk ini terlihat sederhana tanpa bingkai berhiaskan pahatan. Di atas ambang pintu terdapat pahatan kepala Kala yang juga sangat sederhana pahatannya. Adanya beberapa pahatan dan relief yang sangat sederhana menimbulkan dugaan bahwa pembangunan Candi Singasari belum sepenuhnya terselesaikan.</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+</resources>

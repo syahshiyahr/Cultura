@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RedeemActivity"
+    android:background="@drawable/popupdetail_background">
+    <RelativeLayout
+        android:id="@+id/appBar_myChallenge"
+        android:layout_width="match_parent"
+
+        android:layout_height="64dp">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_keyboard_backspace_white_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tukar Poin"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/jumPoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBar_myChallenge"
+        android:text="240"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:textSize="48dp"/>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jumPoin"
+        android:text="Total poin yang anda miliki"
+        android:fontFamily="@font/montserrat"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/redeemRv"
+        android:layout_below="@+id/desc"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="51dp"
+        tools:listitem="@layout/item_redeem"
+        />
+
+</RelativeLayout>
